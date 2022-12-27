@@ -8,6 +8,8 @@ TagManager:
   - Left_Wall
   - Low_Wall
   - Right_Wall
+  - Player_Left
+  - Player_Right
   layers:
   - Default
   - TransparentFX
