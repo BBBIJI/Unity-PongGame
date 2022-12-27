@@ -11,11 +11,11 @@ public class Ball_Movement : MonoBehaviour
         transform.Translate(speed_x,speed_y,0);   
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+void OnCollisionEnter2D(Collision2D collision)
+{
+    if (collision.gameObject.tag == "Up_Wall")
     {
-        if (collision.gameObject.tag == "Up_Wall")
-        {
-            speed_y = -speed_y;
+        speed_y = -speed_y;
         }
         if (collision.gameObject.tag == "Low_Wall")
         {
@@ -27,13 +27,8 @@ public class Ball_Movement : MonoBehaviour
             speed_x = -speed_x;
         }
         if (collision.gameObject.tag == "Left_Wall")
-        {
+    {
             speed_x = -speed_x;
         }
-
-
-
-
-
     }
 }
