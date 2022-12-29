@@ -44,11 +44,17 @@ public class Ball_Movement : MonoBehaviour
         }
         if (collision.gameObject.tag == "Right_Wall")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            transform.position = new Vector3(0,0,0);
+            speed_x=3f;
+            speed_y=3f;
+            PauseGame();
         }
         if (collision.gameObject.tag == "Left_Wall")
         {
-	        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            transform.position = new Vector3(0,0,0);
+            speed_x=3f;
+            speed_y=3f;
+            PauseGame();
         }
         if (collision.gameObject.tag == "Player_Left")
         {

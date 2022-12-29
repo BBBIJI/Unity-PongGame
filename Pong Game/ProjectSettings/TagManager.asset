@@ -10,6 +10,7 @@ TagManager:
   - Right_Wall
   - Player_Left
   - Player_Right
+  - Ball
   layers:
   - Default
   - TransparentFX
