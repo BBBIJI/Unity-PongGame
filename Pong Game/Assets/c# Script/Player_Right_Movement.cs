@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player_Right_Movement : MonoBehaviour
 {
-	float speed = 5;
+	public float speed = 7;
     // Update is called once per frame
     void Update()
     {
